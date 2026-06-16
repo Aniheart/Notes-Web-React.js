@@ -1,0 +1,134 @@
+*{
+  margin:0;
+  padding: 0;
+  background: #000;
+    padding-right: 20px;
+
+}
+
+.main{
+  width: 100%;
+  display: flex;
+  padding: 20px;
+    gap: 30px;
+}
+form{
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: space-;
+
+}
+.container{
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  height: 400px;
+  width: 500px;
+}
+.noteheading{
+  background: #2e2e2e;
+  padding:20px;
+  height: 80px;
+  color: white;
+  font-size: 20px;
+  border-radius: 10px;
+  box-sizing: border-box;
+  width:100%;
+  border: 2px solid white;
+
+}
+button{
+  height: 30px;
+  display: flex;
+  font-weight: bold;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background: white;
+color: black;
+padding:20px;
+border: 2px solid white;
+}
+button:active{
+  background-color: rgb(154, 154, 154);
+}
+.detailnotes{
+  background: #2e2e2e;
+  padding-left:20px;
+  color: white;
+  font-size: 20px;
+  border-radius: 10px;
+  box-sizing: border-box;
+  width:100%;
+    height: 200px;
+    border: 2px solid white;
+
+}
+
+.notesView{
+  flex-shrink: 0;
+  padding:20px;
+color: black;
+  height: 300px;
+  width: 200px;
+  border-radius: 20px;
+  background: #ffffff;
+}
+.titleofnotes{
+  background: white;
+  font-size: 28px;
+  text-transform: uppercase;
+}
+.detailofnotes{
+  background: white;
+  font-size: 18px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*  
+}
+
+button{
+  padding:10px 20px;
+  margin:10px;
+  margin-top:50px;
+  font-weight: bold;
+  color: rgb(123, 119, 119);
+  border-radius: 20px;
+  font-size: 20px;
+
+}
+.red{
+  background: red;
+}
+.green{
+  background: green;
+}
+h1{
+  padding:20px 40px;
+  margin-left:100px;
+  background: #cbdafa;
+  width: fit-content;
+  font-weight: bold;
+  font-size: 70px;
+}
+.inputElm{
+  padding: 10px;
+   font-weight: bold;
+  color: white;
+  border-radius: 20px;
+  font-size: 20px;
+  padding-left: 20px;
+} */
