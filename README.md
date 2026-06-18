@@ -1,16 +1,89 @@
-# React + Vite
+# React Notes App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple Notes App built with React using Hooks. Users can add a note title and description, then display all notes dynamically on the page.
 
-Currently, two official plugins are available:
+## Topics Covered
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+### 1. React Functional Components
 
-## React Compiler
+* Creating components using JavaScript functions.
+* Returning JSX elements.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### 2. useState Hook
 
-## Expanding the ESLint configuration
+* Managing component state.
+* Storing form inputs and notes data.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```js
+const [notesHeading, setnotesHeading] = useState('')
+const [detail, setdetail] = useState('')
+const [tasks, settasks] = useState([])
+```
+
+### 3. Form Handling
+
+* Handling user input with `onChange`.
+* Controlling form fields using state.
+
+### 4. Event Handling
+
+* Handling button clicks.
+* Preventing default form submission behavior.
+
+```js
+e.preventDefault()
+```
+
+### 5. Arrays and State Updates
+
+* Using the spread operator (`...`) to copy arrays.
+* Adding new objects to state.
+
+```js
+const copyTasks = [...tasks]
+copyTasks.push({ notesHeading, detail })
+```
+
+### 6. Rendering Lists
+
+* Displaying multiple notes using the `map()` method.
+
+```js
+tasks.map((elem, idx) => { ... })
+```
+
+### 7. Controlled Components
+
+* Keeping input values synchronized with React state.
+
+### 8. Dynamic UI Updates
+
+* Automatically updating the UI when state changes.
+
+## Features
+
+* Add note title
+* Add note description
+* Display all notes
+* Clear inputs after submission
+* Real-time UI updates using React state
+
+## Technologies Used
+
+* React.js
+* JavaScript (ES6+)
+* JSX
+* CSS
+
+## Learning Outcomes
+
+Through this project, you will learn:
+
+* React Hooks (`useState`)
+* Form Handling
+* Event Handling
+* State Management
+* Array Manipulation
+* List Rendering with `map()`
+* Controlled Inputs
+* Dynamic UI Rendering
